@@ -48,7 +48,7 @@ doc_comment::doctest!("../README.md");
 
 #[doc(inline)]
 pub use {
-    async_executor::{Executor, LocalExecutor, Task},
+    async_executor::{Executor, LocalExecutor, Task, MainExecutor},
     async_io::{block_on, Async, Timer},
     blocking::{unblock, Unblock},
     futures_lite::{future, io, pin, prelude, ready, stream},

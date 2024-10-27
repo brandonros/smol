@@ -16,7 +16,7 @@ exclude = ["/.*"]
 
 [dependencies]
 async-channel = "2.0.0"
-async-executor = "1.5.0"
+async-executor = { git = "https://github.com/smol-rs/async-executor.git", rev = "929dc5057f09a5a09ecbdebd9f73186aa5395a3e", features = ["main_executor"] }
 async-fs = "2.0.0"
 async-io = "2.1.0"
 async-lock = "3.0.0"
@@ -45,7 +45,7 @@ native-tls = "0.2"
 scraper = "0.20"
 signal-hook = "0.3"
 smol-hyper = "0.1.0"
-smol-macros = "0.1.0"
+#smol-macros = "0.1.0"
 surf = { version = "2", default-features = false, features = ["h1-client"] }
 tempfile = "3"
 tokio = { version = "1", default-features = false, features = ["rt-multi-thread"] }
